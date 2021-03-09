@@ -1,2 +1,9 @@
-@import "_footer";
-@import "main/login-main-components";
+@forward "_footer";
+@forward "main/login-main-components";
+
+.login{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

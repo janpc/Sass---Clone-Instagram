@@ -1,0 +1,31 @@
+@use "../../base/base-index" as *;
+
+.login__footer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 15vh;
+
+  &__line {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      font-size: 13px;
+      line-height: 14px;
+      margin: 0px 8px 12px;
+      color: $mediumGrey;
+    }
+
+    &__arrow {
+      font-size: 13px;
+      line-height: 14px;
+      margin-right: 8px;
+      margin-top: -10px;
+      color: $mediumGrey;
+    }
+  }
+}

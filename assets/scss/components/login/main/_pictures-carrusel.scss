@@ -1,0 +1,8 @@
+@use "../../../base/base-index" as *;
+
+.mobileCarrusel{
+    background-image: $mobileBackgroundImage;
+    background-size: 454px 618px;
+    width: 454px;
+    height: 618px;
+}

@@ -1,2 +1,8 @@
-@import "_login-form";
-@import "pictures-carruse";
+@forward "_login-form";
+@forward "pictures-carrusel";
+
+.login__main{
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}

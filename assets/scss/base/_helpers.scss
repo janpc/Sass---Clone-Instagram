@@ -1,0 +1,26 @@
+@use "_variables" as *;
+
+@mixin standard-box {
+    border-radius: 3px;
+    border: 1px solid $lightGrey;
+    background-color: white;
+    padding: 10px 0;
+    margin-bottom: 10px;;
+}
+
+@mixin main-logo($width) {
+    background-image: $logosBackgroundImage;
+    background-repeat: no-repeat;
+    background-size: 430/175*$width 401/175*$width;
+    background-position: 0 -130/175*$width;
+    height: 51/175*$width;
+    width: $width;
+}
+
+@mixin facebook-logo{
+    background-image: $logosBackgroundImage;
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    height: 16px;
+    width: 16px;
+}

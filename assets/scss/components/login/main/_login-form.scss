@@ -1,0 +1,173 @@
+@use "../../../base/base-index" as *;
+
+.login__main__content {
+  margin-top: 32px;
+  max-width: 350px;
+
+  &__login {
+    @include standard-box;
+
+    &__logo {
+      @include main-logo(175px);
+      margin: 22px auto 12px;
+    }
+    &__form {
+      margin-top: 24px;
+
+      input {
+        outline: 0;
+        font-size: 11px;
+        background: $notWhite;
+        border: 1px solid $lightGrey;
+        border-radius: 3px;
+        overflow: hidden;
+        padding: 9px 0 7px 8px;
+        text-overflow: ellipsis;
+        height: 20px;
+        margin: 0 40px 6px;
+        width: calc(100% - 80px);
+        font-family: $mainFont;
+      }
+
+      input[type="submit"] {
+        margin: 8px 40px;
+        height: 30px;
+        color: white;
+        background-color: $activeBlue;
+        border-radius: 4px;
+        padding: 5px 9px;
+        font-weight: 500;
+        width: calc(100% - 70px);
+        font-size: 14px;
+      }
+    }
+    &__or {
+      margin: 10px 40px 18px;
+      display: flex;
+      flex-direction: row;
+      &__separator {
+        flex-grow: 1;
+        height: 1px;
+        position: relative;
+        top: 0.45em;
+        flex-shrink: 1;
+        color: black;
+        box-sizing: border-box;
+        border-bottom: 0.5px solid $lightGrey;
+      }
+      &__text {
+        flex-grow: 0;
+        flex-shrink: 0;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 15px;
+        margin: 0 18px;
+        text-transform: uppercase;
+        color: $mediumGrey;
+        font-weight: 500;
+      }
+    }
+    &__facebook {
+      margin: 8px 40px;
+      &__button {
+        background-color: transparent;
+        border: 0;
+        box-sizing: border-box;
+        color: $facebookBlue;
+        cursor: pointer;
+        display: inline;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px;
+        padding: 0;
+        position: relative;
+        text-align: center;
+        text-overflow: ellipsis;
+        text-transform: inherit;
+        user-select: none;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        outline: none;
+        margin: 0 auto;
+
+        &__logo {
+          @include facebook-logo;
+        }
+        &__text {
+          margin-left: 10px;
+        }
+      }
+    }
+    &__forgot {
+      font-size: 12px;
+      line-height: 14px;
+      margin-top: 12px;
+      margin-bottom: 10px;
+      text-align: center;
+
+      a {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top: 12px;
+        text-align: center;
+        color: $facebookBlue;
+      }
+    }
+  }
+
+  &__signin {
+    @include standard-box;
+
+    &__text {
+      color: $darkGrey;
+      font-size: 14px;
+      margin: 15px;
+      text-align: center;
+      a {
+          color: $activeBlue;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          cursor: pointer;
+      }
+    }
+  }
+  &__downloadApp {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    p{
+        text-align: center;
+    }
+
+    &__links{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+
+        a{
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            vertical-align: baseline;
+            cursor: pointer;
+
+            img{
+                height: 40px;
+                cursor: pointer;
+            }
+        }
+
+        a + a{
+            margin-left: 10px;
+        }
+
+    }
+  }
+}

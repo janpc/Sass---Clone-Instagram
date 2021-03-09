@@ -1,2 +1,2 @@
-@import "login/login-components";
-@import "home/home-components";
+@forward "login/login-components";
+@forward "home/home-components";
