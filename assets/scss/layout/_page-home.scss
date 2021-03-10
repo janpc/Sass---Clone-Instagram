@@ -1,8 +1,12 @@
+@use "../helpers" as *;
 .homeMain {
+  width: 100vh;
   max-width: 935px;
   height: fit-content;
   margin: 0 auto;
-  padding-top: 30px;
+  padding: 0;
+  padding-top: 84px;
+  overflow: hidden;
 }
 
 .feedContainer {
@@ -14,7 +18,7 @@
 
 .suggestions{
   position: fixed;
-  left: max(642px, (100% - 935px) / 2 + 642px);
+  left: max(650px, (100% - 935px) / 2 + 650px);
   top: 84px;
   height: 100vh;
   width: 293px;
