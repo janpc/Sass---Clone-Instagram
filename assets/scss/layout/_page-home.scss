@@ -11,12 +11,11 @@
 
 .feedContainer {
   float: left;
-  margin-right: 28px;
   max-width: 614px;
   width: 100%;
 }
 
-.suggestions{
+.sidebar{
   position: fixed;
   left: max(650px, (100% - 935px) / 2 + 650px);
   top: 84px;
@@ -24,5 +23,4 @@
   width: 293px;
   margin-bottom: 30px;
   padding: 0;
-  background-color: blue;
 }

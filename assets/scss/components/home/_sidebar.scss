@@ -1,0 +1,146 @@
+@use "../../helpers" as *;
+
+.sidebar {
+  &__porfile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 24px;
+    height: 56px;
+    &__image {
+      @include porfile-picture(56px);
+      cursor: pointer;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      margin-left: 18px;
+      width: calc(100% - 110px);
+      p {
+        font-size: 13.2px;
+        line-height: 18px;
+        margin: 1px 0;
+      }
+      &__username {
+        font-weight: 600;
+      }
+      &__name {
+        color: $mediumGrey;
+      }
+    }
+    &__switch {
+      @extend %reset-button;
+      color: $activeBlue;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &__suggestions {
+    &__header {
+      padding-bottom: 4px;
+      padding-top: 4px;
+      margin-top: 18px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &__title {
+        color: $mediumGrey;
+        font-size: 13px;
+        line-height: 14px;
+        font-weight: 600;
+      }
+      &__showAll {
+        @extend %reset-button;
+        color: $darkGrey;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+      }
+    }
+    &__porfile {
+      display: flex;
+      align-items: center;
+      padding: 1px 0;
+      height: 48px;
+      &__image {
+        @include porfile-picture(32px, true);
+        cursor: pointer;
+      }
+      &__info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        width: calc(100% - 88px);
+        overflow: hidden;
+        p {
+          font-size: 13.2px;
+          line-height: 18px;
+          margin: 1px 0;
+        }
+        &__username {
+          font-weight: 600;
+        }
+        &__followers {
+          color: $mediumGrey;
+          width: 95%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+      &__follow {
+        @extend %reset-button;
+        color: $activeBlue;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 12px;
+
+    &__nav {
+      margin-bottom: 16px;
+      max-width: 100%;
+
+      &__list {
+        list-style: none;
+        margin-right: 0;
+        text-align: left;
+        padding-left: 0;
+
+        &__item {
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 13px;
+          text-transform: none;
+          display: inline-block;
+
+          &__link {
+            color: #c7c7c7;
+            text-decoration: none;
+          }
+
+          &:not(:last-of-type)::after{
+            content: '\00B7';
+            margin: 0 .25em 0 .25em;
+            color: #c7c7c7;
+          }
+        }
+      }
+    }
+
+    &__credits{
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+        color: #c7c7c7;
+        text-transform: uppercase;
+    }
+  }
+}

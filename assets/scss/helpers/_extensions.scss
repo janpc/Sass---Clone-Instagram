@@ -20,10 +20,19 @@
   width: 16px;
 }
 
-%next_button{
+%next_button {
   background-image: $logosBackgroundImage2;
   background-repeat: no-repeat;
   background-position: -294px -273px;
   height: 45px;
   width: 45px;
+}
+
+%reset-button {
+  border: 0;
+  display: inline;
+  padding: 0;
+  position: relative;
+  background-color: transparent;
+  outline:none;
 }

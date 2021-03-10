@@ -27,6 +27,15 @@
   width: 45px;
 }
 
+.sidebar__porfile__switch, .sidebar__suggestions__header__showAll, .sidebar__suggestions__porfile__follow {
+  border: 0;
+  display: inline;
+  padding: 0;
+  position: relative;
+  background-color: transparent;
+  outline: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -472,103 +481,56 @@ input[type=checkbox], input[type=radio] {
   width: 240px;
 }
 .mobileCarrusel__images__content__1 {
-  animation: carrusel-animation-1 30s linear infinite normal;
+  animation: carrusel-animation-1 24s linear infinite normal;
 }
-@-webkit-keyframes carrusel-animation-1 {
-  0% {
+@-moz-keyframes carrusel-animation-1 {
+  90% {
     opacity: 0;
+  }
+  95% {
     opacity: 1;
   }
   20% {
-    opacity: 0;
     opacity: 1;
   }
   25% {
     opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    opacity: 1;
   }
 }
 @keyframes carrusel-animation-1 {
-  0% {
+  90% {
     opacity: 0;
+  }
+  95% {
     opacity: 1;
   }
   20% {
-    opacity: 0;
     opacity: 1;
   }
   25% {
     opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    opacity: 1;
   }
 }
 .mobileCarrusel__images__content__2 {
-  animation: carrusel-animation-2 30s linear infinite normal;
+  animation: carrusel-animation-2 24s linear infinite normal;
 }
-@-webkit-keyframes carrusel-animation-2 {
+@-moz-keyframes carrusel-animation-2 {
   0% {
     opacity: 0;
   }
-  20% {
+  100% {
     opacity: 0;
   }
-  25% {
+  15% {
     opacity: 0;
-    opacity: 2;
+  }
+  20% {
+    opacity: 1;
   }
   45% {
-    opacity: 0;
-    opacity: 2;
+    opacity: 1;
   }
   50% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0;
-  }
-  100% {
     opacity: 0;
   }
 }
@@ -576,64 +538,42 @@ input[type=checkbox], input[type=radio] {
   0% {
     opacity: 0;
   }
-  20% {
+  100% {
     opacity: 0;
   }
-  25% {
+  15% {
     opacity: 0;
-    opacity: 2;
+  }
+  20% {
+    opacity: 1;
   }
   45% {
-    opacity: 0;
-    opacity: 2;
+    opacity: 1;
   }
   50% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0;
-  }
-  100% {
     opacity: 0;
   }
 }
 .mobileCarrusel__images__content__3 {
-  animation: carrusel-animation-3 30s linear infinite normal;
+  animation: carrusel-animation-3 24s linear infinite normal;
 }
-@-webkit-keyframes carrusel-animation-3 {
+@-moz-keyframes carrusel-animation-3 {
   0% {
     opacity: 0;
   }
-  20% {
+  100% {
     opacity: 0;
   }
-  25% {
+  40% {
     opacity: 0;
   }
   45% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    opacity: 3;
+    opacity: 1;
   }
   70% {
-    opacity: 0;
-    opacity: 3;
+    opacity: 1;
   }
   75% {
-    opacity: 0;
-  }
-  95% {
-    opacity: 0;
-  }
-  100% {
     opacity: 0;
   }
 }
@@ -641,62 +581,40 @@ input[type=checkbox], input[type=radio] {
   0% {
     opacity: 0;
   }
-  20% {
+  100% {
     opacity: 0;
   }
-  25% {
+  40% {
     opacity: 0;
   }
   45% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-    opacity: 3;
+    opacity: 1;
   }
   70% {
-    opacity: 0;
-    opacity: 3;
+    opacity: 1;
   }
   75% {
     opacity: 0;
   }
-  95% {
+}
+.mobileCarrusel__images__content__4 {
+  animation: carrusel-animation-4 24s linear infinite normal;
+}
+@-moz-keyframes carrusel-animation-4 {
+  0% {
     opacity: 0;
   }
   100% {
     opacity: 0;
   }
-}
-.mobileCarrusel__images__content__4 {
-  animation: carrusel-animation-4 30s linear infinite normal;
-}
-@-webkit-keyframes carrusel-animation-4 {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  50% {
+  65% {
     opacity: 0;
   }
   70% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-    opacity: 4;
+    opacity: 1;
   }
   95% {
-    opacity: 0;
-    opacity: 4;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -706,28 +624,17 @@ input[type=checkbox], input[type=radio] {
   0% {
     opacity: 0;
   }
-  20% {
+  100% {
     opacity: 0;
   }
-  25% {
-    opacity: 0;
-  }
-  45% {
-    opacity: 0;
-  }
-  50% {
+  65% {
     opacity: 0;
   }
   70% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-    opacity: 4;
+    opacity: 1;
   }
   95% {
-    opacity: 0;
-    opacity: 4;
+    opacity: 1;
   }
   100% {
     opacity: 0;
@@ -1044,6 +951,168 @@ input[type=checkbox], input[type=radio] {
   display: block;
 }
 
+.sidebar__porfile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 24px;
+  height: 56px;
+}
+.sidebar__porfile__image {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+.sidebar__porfile__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: block;
+}
+.sidebar__porfile__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+  width: calc(100% - 110px);
+}
+.sidebar__porfile__info p {
+  font-size: 13.2px;
+  line-height: 18px;
+  margin: 1px 0;
+}
+.sidebar__porfile__info__username {
+  font-weight: 600;
+}
+.sidebar__porfile__info__name {
+  color: #8e8e8e;
+}
+.sidebar__porfile__switch {
+  color: #0095f6;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+.sidebar__suggestions__header {
+  padding-bottom: 4px;
+  padding-top: 4px;
+  margin-top: 18px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar__suggestions__header__title {
+  color: #8e8e8e;
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: 600;
+}
+.sidebar__suggestions__header__showAll {
+  color: #262626;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+.sidebar__suggestions__porfile {
+  display: flex;
+  align-items: center;
+  padding: 1px 0;
+  height: 48px;
+}
+.sidebar__suggestions__porfile__image {
+  width: 32px;
+  height: 32px;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(to bottom left, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+  padding: 2px;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.sidebar__suggestions__porfile__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: block;
+}
+.sidebar__suggestions__porfile__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: block;
+  border: 2px solid white;
+}
+.sidebar__suggestions__porfile__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12px;
+  width: calc(100% - 88px);
+  overflow: hidden;
+}
+.sidebar__suggestions__porfile__info p {
+  font-size: 13.2px;
+  line-height: 18px;
+  margin: 1px 0;
+}
+.sidebar__suggestions__porfile__info__username {
+  font-weight: 600;
+}
+.sidebar__suggestions__porfile__info__followers {
+  color: #8e8e8e;
+  width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sidebar__suggestions__porfile__follow {
+  color: #0095f6;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+.sidebar__footer {
+  margin-top: 12px;
+}
+.sidebar__footer__nav {
+  margin-bottom: 16px;
+  max-width: 100%;
+}
+.sidebar__footer__nav__list {
+  list-style: none;
+  margin-right: 0;
+  text-align: left;
+  padding-left: 0;
+}
+.sidebar__footer__nav__list__item {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  text-transform: none;
+  display: inline-block;
+}
+.sidebar__footer__nav__list__item__link {
+  color: #c7c7c7;
+  text-decoration: none;
+}
+.sidebar__footer__nav__list__item:not(:last-of-type)::after {
+  content: "·";
+  margin: 0 0.25em 0 0.25em;
+  color: #c7c7c7;
+}
+.sidebar__footer__credits {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #c7c7c7;
+  text-transform: uppercase;
+}
+
 .homeMain {
   width: 100vh;
   max-width: 935px;
@@ -1056,12 +1125,11 @@ input[type=checkbox], input[type=radio] {
 
 .feedContainer {
   float: left;
-  margin-right: 28px;
   max-width: 614px;
   width: 100%;
 }
 
-.suggestions {
+.sidebar {
   position: fixed;
   left: max(650px, (100% - 935px) / 2 + 650px);
   top: 84px;
@@ -1069,7 +1137,6 @@ input[type=checkbox], input[type=radio] {
   width: 293px;
   margin-bottom: 30px;
   padding: 0;
-  background-color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */
