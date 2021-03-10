@@ -1,4 +1,4 @@
-@import "feed/_feed-components.scss";
-@import "_navbar.scss";
-@import "_suggestions.scss";
+@forward "feed/_feed-components.scss";
+@forward "./navbar";
+@forward "_suggestions.scss";
 

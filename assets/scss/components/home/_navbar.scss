@@ -1,0 +1,59 @@
+@use "../../helpers" as *;
+
+.navBar {
+  background-color: white;
+  width: 100vw;
+  border-bottom: 1px solid $lightGrey;
+
+  &__content {
+    max-width: 975px;
+    height: 54px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > * {
+      width: 30%;
+      margin: 0 20px;
+    }
+
+    &__logoContainer {
+      &__logo {
+        margin-top: 6px;
+        @include main-logo(103px);
+        cursor: pointer;
+      }
+    }
+
+    &__searchContainer {
+      display: flex;
+      justify-content: center;
+      
+      &__search {
+        width: 209px;
+        height: 24px;
+        border: 1px solid $lightGrey;
+        background-color: $notWhite;
+        border-radius: 3px;
+      }
+    }
+
+    &__iconsContainer {
+      display: flex;
+      justify-content: flex-end;
+
+      > * {
+        cursor: pointer;
+      }
+
+      > *:not(:first-child) {
+        margin-left: 22px;
+      }
+
+      &__porfile {
+        @include porfile-picture(22px);
+      }
+    }
+  }
+}

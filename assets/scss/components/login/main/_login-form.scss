@@ -1,11 +1,11 @@
-@use "../../../base/base-index" as *;
+@use "../../../helpers" as *;
 
 .login__main__content {
   margin-top: 32px;
   max-width: 350px;
 
   &__login {
-    @include standard-box;
+    @extend %standard-box;
 
     &__logo {
       @include main-logo(175px);
@@ -92,7 +92,7 @@
         margin: 0 auto;
 
         &__logo {
-          @include facebook-logo;
+          @extend %facebook-logo;
         }
         &__text {
           margin-left: 10px;
@@ -117,7 +117,7 @@
   }
 
   &__signin {
-    @include standard-box;
+    @extend %standard-box;
 
     &__text {
       color: $darkGrey;

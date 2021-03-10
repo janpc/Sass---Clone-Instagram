@@ -1,0 +1,24 @@
+.homeMain {
+  max-width: 935px;
+  height: fit-content;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.feedContainer {
+  float: left;
+  margin-right: 28px;
+  max-width: 614px;
+  width: 100%;
+}
+
+.suggestions{
+  position: fixed;
+  left: max(642px, (100% - 935px) / 2 + 642px);
+  top: 84px;
+  height: 100vh;
+  width: 293px;
+  margin-bottom: 30px;
+  padding: 0;
+  background-color: blue;
+}

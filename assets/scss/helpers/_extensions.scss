@@ -1,0 +1,29 @@
+@use "colors" as *;
+@use "images" as *;
+
+%standard-box {
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 3px;
+  border: 1px solid $lightGrey;
+  background-color: white;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+%facebook-logo {
+  background-image: $logosBackgroundImage;
+  background-repeat: no-repeat;
+  background-position: -414px -259px;
+  height: 16px;
+  width: 16px;
+}
+
+%next_button{
+  background-image: $logosBackgroundImage2;
+  background-repeat: no-repeat;
+  background-position: -294px -273px;
+  height: 45px;
+  width: 45px;
+}

@@ -1,4 +1,4 @@
-@use "_variables" as *;
+@use "../helpers" as *;
 
 body{
     margin: 0;
@@ -7,4 +7,6 @@ body{
     background-color: $notWhite;
     font-family:$mainFont;
     color: $darkGrey;
+    width: 100vw;
+    height: 100vh;
 }

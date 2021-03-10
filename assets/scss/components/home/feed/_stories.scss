@@ -1,0 +1,55 @@
+@use "../../../helpers/" as *;
+
+.stories {
+  @extend %standard-box;
+  height: 86px;
+  margin-bottom: 24px;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+
+  &__item {
+    height: 122px;
+    padding: 0 4px;
+    top: 2px;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    &__image {
+      @include porfile-picture(56px, true);
+      margin-bottom: 6px;
+      margin-top: 4px;
+    }
+
+    span {
+      font-size: 11.5px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      max-width: 74px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__next{
+    div{
+      @extend %next_button;
+      border-radius: 50%;
+    }
+    background-color: transparent;
+    border: 0;
+    justify-self: center;
+    outline: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    right: 0;
+  }
+}
