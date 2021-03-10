@@ -1,8 +1,27 @@
 @use "../../../helpers" as *;
 
-.mobileCarrusel{
-    background-image: $mobileBackgroundImage;
-    background-size: 454px 618px;
-    width: 454px;
-    height: 618px;
+.mobileCarrusel {
+  background-image: $mobileBackgroundImage;
+  background-size: 454px 618px;
+  width: 454px;
+  height: 618px;
+
+  &__images {
+    margin-left: 151px;
+    position: relative;
+    * {
+      height: 427px;
+      left: 0;
+      /* opacity: 0; */
+      position: absolute;
+      top: 100px;
+      /* visibility: hidden; */
+      width: 240px;
+    }
+    @for $i from 1 through 4 {
+      &__content__#{$i} {
+        @include carrusel-animation($i);
+      }
+    }
+  }
 }

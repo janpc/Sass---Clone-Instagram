@@ -42,16 +42,6 @@
       border: 2px solid white;
     }
   }
-
-  /* padding: 1px;
-  
-  border: 1px solid transparent;
-  
-  background: linear-gradient(to bottom, #833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737,#FCAF45,#FFDC80);
-  
-  background-clip: border-box;
-  
-  background-origin: border-box; */
 }
 
 @mixin main-logo($width) {
@@ -61,4 +51,57 @@
   background-position: 0 -130/175 * $width;
   height: 51/175 * $width;
   width: $width;
+}
+
+@mixin carrusel-animation($pos){
+  @include create-carrusel-animation($pos);
+  animation: carrusel-animation-#{$pos} 30s linear infinite normal;
+}
+
+@mixin create-carrusel-animation($pos) {
+  @-webkit-keyframes carrusel-animation-#{$pos} {
+    @for $i from 1 through 4 {
+      #{($i - 1) * 25%}{
+        opacity: 0;
+        @if $pos == $i {
+          opacity: $i;
+        }
+      }
+      #{($i - 1) * 25% + 20%}{
+        opacity: 0;
+        @if $pos == $i {
+          opacity: $i;
+        }
+      }
+    }
+    100% {
+      opacity: 0;
+      @if $pos == 1 {
+        opacity: 1;
+      }
+    }
+  }
+
+  @keyframes carrusel-animation-#{$pos} {
+    @for $i from 1 through 4 {
+      #{($i - 1) * 25%}{
+        opacity: 0;
+        @if $pos == $i {
+          opacity: $i;
+        }
+      }
+      #{($i - 1) * 25% + 20%}{
+        opacity: 0;
+        @if $pos == $i {
+          opacity: $i;
+        }
+      }
+    }
+    100% {
+      opacity: 0;
+      @if $pos == 1 {
+        opacity: 1;
+      }
+    }
+  }
 }
